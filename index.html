@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <div class="container">
+        <h1 class="h1">Weather Info</h1>
+        <!-- Search -->
+        <div class="search-container">
+            <input type="text" id="search-box" placeholder="Search for a location">
+            <button id="search-btn">Search</button>
+        </div>
+        <!-- Map -->
+        <div id="map" style="height: 400px;"></div>
+        <!-- Weather details -->
+        <div class="weather-details">
+            <h2>Weather Information</h2>
+            <p id="location"> <b>Location:</b> <span id="location-name">None</span></p>
+            <p id="temperature"> <b>Temperature:</b> <span id="temp-value">--</span></p>
+            <p id="condition"> <b>Condition:</b> <span id="condition-value">--</span></p>
+        </div>
+    </div>
+
+    <!-- More info -->
+    <h2 class="info">More Information</h2>
+    <div class="more-info">
+        
+        <p id="feels-like-text"> <b>Feels like:</b> <span id="feels-like">--</span> </p> 
+        <p id="pressure-text"> <b>Pressure:</b> <span id="pressure">--</span> hPa</p>
+    </div>
+    
+    <!-- Leaflet.js Script -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- App Script -->
+    <script src="script.js"></script>
+</body>
+</html>
